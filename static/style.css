@@ -152,7 +152,9 @@ button:hover{
 .platform-grid{
 
     display:grid;
+
     grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+
     gap:30px;
     max-width:1200px;
     margin:auto;
@@ -160,17 +162,32 @@ button:hover{
 
 .platform-card{
 
-    background:
-    rgba(255,255,255,0.05);
+    background:rgba(255,255,255,0.05);
+
     border:1px solid rgba(255,255,255,0.08);
+
     border-radius:25px;
+
     padding:50px 20px;
+
     font-size:28px;
+
     font-weight:bold;
+
     backdrop-filter:blur(12px);
+
     transition:0.3s;
-    box-shadow:
-    0 0 30px rgba(0,0,0,0.3);
+
+    box-shadow:0 0 30px rgba(0,0,0,0.3);
+}
+
+.platform-card:hover{
+
+    transform:translateY(-10px);
+
+    border:1px solid #7c4dff;
+
+    box-shadow:0 0 40px rgba(124,77,255,0.5);
 }
 
 .platform-card:hover{
