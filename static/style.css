@@ -269,3 +269,77 @@ button:hover{
     font-size:18px;
     line-height:1.6;
 }
+.advantages{
+    padding:120px 20px;
+    text-align:center;
+}
+
+.advantages h2{
+    font-size:48px;
+    margin-bottom:70px;
+}
+
+.advantages-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(260px,1fr));
+
+    gap:30px;
+
+    max-width:1200px;
+
+    margin:auto;
+}
+
+.adv-card{
+
+    background:
+    rgba(255,255,255,0.05);
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    border-radius:30px;
+
+    padding:50px 30px;
+
+    backdrop-filter:blur(12px);
+
+    transition:0.3s;
+}
+
+.adv-card:hover{
+
+    transform:translateY(-10px);
+
+    border:
+    1px solid #7c4dff;
+
+    box-shadow:
+    0 0 40px rgba(124,77,255,0.35);
+}
+
+.adv-icon{
+
+    font-size:55px;
+
+    margin-bottom:25px;
+}
+
+.adv-card h3{
+
+    font-size:30px;
+
+    margin-bottom:20px;
+}
+
+.adv-card p{
+
+    color:#aaa;
+
+    font-size:18px;
+
+    line-height:1.6;
+}
