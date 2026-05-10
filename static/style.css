@@ -6,15 +6,16 @@ body{
 }
 
 .hero{
-    height:100vh;
-
-    display:flex;
-    flex-direction:column;
-
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:
+    radial-gradient(circle at top, rgba(120, 0, 255, 0.25), transparent 40%),
+    radial-gradient(circle at bottom, rgba(0, 140, 255, 0.15), transparent 35%),
+    #050505;
 }
 
 h1{
