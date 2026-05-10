@@ -189,12 +189,3 @@ button:hover{
 
     box-shadow:0 0 40px rgba(124,77,255,0.5);
 }
-
-.platform-card:hover{
-
-    transform:
-    translateY(-10px);
-    border:1px solid #7c4dff;
-    box-shadow:
-    0 0 40px rgba(124,77,255,0.5);
-}
