@@ -1,6 +1,9 @@
 body{
     margin:0;
-    background:#050505;
+    background:
+    radial-gradient(circle at top, rgba(120, 0, 255, 0.25), transparent 40%),
+    radial-gradient(circle at bottom, rgba(0, 140, 255, 0.15), transparent 35%),
+    #050505;
     color:white;
     font-family:Arial;
 }
@@ -12,18 +15,13 @@ body{
     align-items:center;
     padding:0 80px;
     gap:60px;
-
-    background:
-    radial-gradient(circle at top, rgba(120, 0, 255, 0.25), transparent 40%),
-    radial-gradient(circle at bottom, rgba(0, 140, 255, 0.15), transparent 35%),
-    #050505;
 }
 .hero-left{
     max-width:600px;
 }
 
 .hero-right img{
-    width:500px;
+    width:560px;
     animation:float 4s ease-in-out infinite;
 }
 
