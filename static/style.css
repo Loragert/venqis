@@ -91,53 +91,33 @@ button:hover{
 @media (max-width: 768px) {
 
     .navbar {
-
         flex-direction: column;
-
         gap: 15px;
-
         padding: 15px;
-
     }
 
     .menu {
-
         justify-content: center;
-
         gap: 20px;
-
     }
 
     .menu a {
-
         font-size: 22px;
-
     }
 
     .hero h1 {
-
         font-size: 80px;
-
     }
 
     .hero p {
-
         font-size: 22px;
-
         text-align:center;
-
         padding:0 20px;
-
     }
 
     button {
-
         width: 230px;
-
         height: 75px;
-
         font-size: 30px;
-
     }
-
 }
