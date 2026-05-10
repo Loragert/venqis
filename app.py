@@ -27,7 +27,7 @@ async def home():
                 </h1>
 
                 <p style="font-size:24px;color:#aaa;">
-                    Boost your social presence
+                    Платформа для просування в соціальних мережах
                 </p>
 
                 <button style="
@@ -40,7 +40,7 @@ async def home():
                     color:black;
                     cursor:pointer;
                 ">
-                    Get Started
+                    Почати
                 </button>
 
             </div>
@@ -48,7 +48,7 @@ async def home():
 
             <div style="margin-top:120px;">
 
-                <h2>Platforms</h2>
+                <h2>Платформи</h2>
 
                 <p>
                     Instagram • TikTok • Telegram • Reddit
@@ -59,11 +59,11 @@ async def home():
 
             <div style="margin-top:120px;padding-bottom:100px;">
 
-                <h2>How it works</h2>
+                <h2>Як це працює</h2>
 
-                <p>1. Choose service</p>
-                <p>2. Submit order</p>
-                <p>3. Receive engagement</p>
+                <p>1. Оберіть послугу</p>
+                <p>2. Створіть замовлення</p>
+                <p>3. Отримайте активність</p>
 
             </div>
 
