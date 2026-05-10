@@ -6,18 +6,41 @@ body{
 }
 
 .hero{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 80px;
+    gap:60px;
+
     background:
     radial-gradient(circle at top, rgba(120, 0, 255, 0.25), transparent 40%),
     radial-gradient(circle at bottom, rgba(0, 140, 255, 0.15), transparent 35%),
     #050505;
 }
+.hero-left{
+    max-width:600px;
+}
 
+.hero-right img{
+    width:500px;
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-20px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+}
 h1{
     font-size:64px;
     margin-bottom:10px;
