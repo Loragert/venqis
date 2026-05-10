@@ -150,8 +150,9 @@ button:hover{
 }
 
 .platform-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
     gap:30px;
     max-width:1200px;
     margin:auto;
