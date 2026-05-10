@@ -19,10 +19,36 @@ body{
 .hero-left{
     max-width:600px;
 }
+.hero-right{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-right::before{
+    content:'';
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    background:radial-gradient(
+        circle,
+        rgba(140,0,255,0.35),
+        transparent 70%
+    );
+
+    filter:blur(50px);
+
+    z-index:0;
+}
 
 .hero-right img{
     width:560px;
     animation:float 4s ease-in-out infinite;
+    position:relative;
+    z-index:1;
 }
 
 @keyframes float{
