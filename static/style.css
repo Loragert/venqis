@@ -150,9 +150,9 @@ button:hover{
 }
 
 .platform-grid{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
     gap:30px;
     max-width:1200px;
     margin:auto;
@@ -162,8 +162,7 @@ button:hover{
 
     background:
     rgba(255,255,255,0.05);
-    border:
-    1px solid rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.08);
     border-radius:25px;
     padding:50px 20px;
     font-size:28px;
@@ -178,8 +177,7 @@ button:hover{
 
     transform:
     translateY(-10px);
-    border:
-    1px solid #7c4dff;
+    border:1px solid #7c4dff;
     box-shadow:
     0 0 40px rgba(124,77,255,0.5);
 }
