@@ -637,17 +637,19 @@ button:hover{
 
 .mini-adv-card{
 
-    width:260px;
+    width:230px;
+
+    min-height:120px;
 
     background:
-    rgba(255,255,255,0.04);
+    rgba(255,255,255,0.035);
 
     border:
-    1px solid rgba(192,132,252,0.12);
+    1px solid rgba(192,132,252,0.10);
 
-    border-radius:28px;
+    border-radius:22px;
 
-    padding:30px;
+    padding:22px;
 
     backdrop-filter:blur(16px);
 
@@ -668,28 +670,28 @@ button:hover{
 
 .mini-icon{
 
-    font-size:34px;
+    font-size:26px;
 
-    margin-bottom:18px;
+    margin-bottom:12px;
 
     filter:
-    drop-shadow(0 0 10px rgba(192,132,252,0.6));
+    drop-shadow(0 0 10px rgba(192,132,252,0.55));
 }
-
 .mini-adv-card h3{
 
-    font-size:28px;
+    font-size:22px;
 
-    margin-bottom:14px;
+    margin-bottom:10px;
 
     color:white;
-}
 
+    line-height:1.2;
+}
 .mini-adv-card p{
 
     color:#bdbdbd;
 
-    line-height:1.6;
+    line-height:1.45;
 
-    font-size:16px;
+    font-size:14px;
 }
