@@ -626,36 +626,37 @@ button:hover{
 
     display:flex;
 
-    justify-content:center;
+    justify-content:space-between;
 
-    gap:20px;
+    align-items:stretch;
 
-    flex-wrap:wrap;
+    gap:18px;
 
-    margin-top:40px;
+    margin-top:25px;
 
-    margin-bottom:40px;
+    margin-bottom:20px;
+
+    width:100%;
+
 }
 
 .mini-adv-card{
 
-    width:230px;
+    flex:1;
 
-    min-height:120px;
+    min-height:110px;
 
-    background:
-    rgba(255,255,255,0.035);
-
-    border:
-    1px solid rgba(192,132,252,0.10);
+    padding:20px;
 
     border-radius:22px;
 
-    padding:22px;
+    background:rgba(255,255,255,0.05);
 
-    backdrop-filter:blur(16px);
+    border:1px solid rgba(255,255,255,0.08);
 
-    transition:0.35s;
+    backdrop-filter:blur(12px);
+
+    transition:0.3s;
 }
 
 .mini-adv-card:hover{
@@ -681,19 +682,17 @@ button:hover{
 }
 .mini-adv-card h3{
 
-    font-size:22px;
+    font-size:24px;
 
-    margin-bottom:10px;
+    margin-top:10px;
 
-    color:white;
-
-    line-height:1.2;
+    margin-bottom:8px;
 }
 .mini-adv-card p{
 
-    color:#bdbdbd;
-
-    line-height:1.45;
-
     font-size:14px;
+
+    line-height:1.4;
+
+    opacity:0.8;
 }
