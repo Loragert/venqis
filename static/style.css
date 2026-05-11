@@ -48,10 +48,15 @@ body{
 }
 
 .hero-right img{
-    width:650px;
-    animation:float 4s ease-in-out infinite;
-    position:relative;
-    z-index:1;
+
+    width:520px;
+
+    max-width:none;
+
+    animation:floatPhone 5s ease-in-out infinite;
+
+    filter:drop-shadow(0 0 35px rgba(168,85,247,0.45));
+
 }
 
 @keyframes float{
