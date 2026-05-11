@@ -556,3 +556,56 @@ button:hover{
     box-shadow:
     0 0 40px rgba(140,0,255,0.6);
 }
+.hero-stats{
+
+    display:flex;
+    gap:25px;
+
+    margin-top:40px;
+
+    flex-wrap:wrap;
+}
+
+.hero-stat{
+
+    background:
+    rgba(255,255,255,0.05);
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    border-radius:20px;
+
+    padding:18px 24px;
+
+    backdrop-filter:blur(12px);
+
+    transition:0.3s;
+}
+
+.hero-stat:hover{
+
+    transform:translateY(-5px);
+
+    border:
+    1px solid #c084fc;
+
+    box-shadow:
+    0 0 25px rgba(192,132,252,0.35);
+}
+
+.hero-stat h3{
+
+    color:#c084fc;
+
+    font-size:28px;
+
+    margin-bottom:5px;
+}
+
+.hero-stat p{
+
+    color:#aaa;
+
+    font-size:14px;
+}
