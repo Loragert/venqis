@@ -559,30 +559,41 @@ button:hover{
 .hero-stats{
 
     display:flex;
-    gap:25px;
 
-    margin-top:40px;
+    gap:15px;
 
-    flex-wrap:wrap;
+    margin-top:35px;
+
+    flex-wrap:nowrap;
 }
 
 .hero-stat{
+
+    width:120px;
+    height:120px;
 
     background:
     rgba(255,255,255,0.05);
 
     border:
-    1px solid rgba(255,255,255,0.08);
+    1px solid rgba(192,132,252,0.15);
 
-    border-radius:20px;
+    border-radius:24px;
 
-    padding:18px 24px;
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
 
     backdrop-filter:blur(12px);
 
     transition:0.3s;
 }
-
 .hero-stat:hover{
 
     transform:translateY(-5px);
@@ -598,14 +609,16 @@ button:hover{
 
     color:#c084fc;
 
-    font-size:28px;
+    font-size:32px;
 
-    margin-bottom:5px;
+    margin-bottom:10px;
 }
 
 .hero-stat p{
 
-    color:#aaa;
+    color:#d4d4d4;
 
     font-size:14px;
+
+    line-height:1.3;
 }
