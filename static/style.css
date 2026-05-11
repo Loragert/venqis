@@ -45,7 +45,7 @@ body{
 }
 
 .hero-right img{
-    width:560px;
+    width:650px;
     animation:float 4s ease-in-out infinite;
     position:relative;
     z-index:1;
@@ -198,11 +198,16 @@ button:hover{
     transition:0.3s;
 }
 
-.menu a:hover{
-
-    color:#999;
+.menu a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
 }
 
+.menu a:hover{
+    color:#c084fc;
+    text-shadow:0 0 12px rgba(192,132,252,0.8);
+}
 @media (max-width: 768px) {
 
     .navbar {
