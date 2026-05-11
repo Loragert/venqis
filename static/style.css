@@ -74,7 +74,9 @@ body{
     }
 }
 h1{
-    font-size:110px;
+    font-size:140px;
+    line-height:0.9;
+    letter-spacing:-5px;
     font-weight:bold;
     color:white;
     position:relative;
