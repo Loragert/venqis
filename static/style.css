@@ -624,11 +624,11 @@ button:hover{
 
     position:absolute;
 
-    bottom:-240px;
+    bottom:-260px;
 
     left:0;
 
-    width:140%;
+    width:120%;
 
     display:flex;
 
@@ -693,7 +693,7 @@ button:hover{
 
     gap:18px;
 
-    margin-top:-820px;
+    margin-top:-1000px;
 
     margin-bottom:20px;
 
