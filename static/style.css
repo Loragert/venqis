@@ -323,6 +323,26 @@ button:hover{
     border:1px solid #7c4dff;
     box-shadow:0 0 40px rgba(124,77,255,0.5);
 }
+/* ІКОНКИ ПЛАТФОРМ */
+
+.platform-icon{
+    font-size:60px;
+    margin-bottom:25px;
+    color:white;
+
+    text-shadow:
+        0 0 10px rgba(255,255,255,0.7),
+        0 0 25px rgba(168,85,247,0.8);
+
+    transition:0.3s;
+}
+/* HOVER ІКОНОК */
+
+.platform-card:hover .platform-icon{
+
+    transform:scale(1.1);
+
+}
 .how-it-works{
     padding:120px 20px;
     text-align:center;
