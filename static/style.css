@@ -18,7 +18,7 @@ body{
     gap:60px;
 }
 .hero-left{
-    max-width:1000px;
+    max-width:720px;
 
     display:flex;
 
