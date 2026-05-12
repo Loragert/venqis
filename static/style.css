@@ -455,7 +455,7 @@ button:hover{
 
     margin:0 auto;
 
-    padding:120px 20px;
+    padding:120px 80px;
 
     text-align:center;
 }
@@ -476,6 +476,8 @@ button:hover{
     flex-wrap:wrap;
 
     max-width:1200px;
+    width:100%;
+    box-sizing:border-box;
 
     margin:0 auto;
 }
