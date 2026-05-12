@@ -12,8 +12,8 @@ body{
     min-height:85vh;
     display:flex;
     justify-content:space-between;
-    align-items:center;
-    padding:40px 80px 30px;
+    align-items:flex-start;
+    padding:10px 80px 30px;
     gap:60px;
 }
 .hero-left{
