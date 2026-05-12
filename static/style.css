@@ -462,9 +462,10 @@ button:hover{
 
     display:grid;
 
-    grid-template-columns:repeat(4, 1fr);
+    grid-template-columns:repeat(4, 260px);
 
     gap:20px;
+    justify-content:center;
 
     margin:auto;
 }
