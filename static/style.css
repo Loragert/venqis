@@ -20,7 +20,7 @@ body{
     max-width:700px;
     display:flex;
     flex-direction:column;
-    gap:25px;
+    gap:10px;
 }
 .hero-right{
     position:relative;
@@ -118,12 +118,14 @@ h1{
 }
 p{
     color:#999;
+    margin-top:-10;
     margin-bottom:30px;
 }
 
 button{
     width: 230px;
     height: 75px;
+    margin-top:5px;
     border: none;
     border-radius: 20px;
     background: white;
