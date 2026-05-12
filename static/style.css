@@ -339,9 +339,31 @@ button:hover{
 /* HOVER ІКОНОК */
 
 .platform-card:hover .platform-icon{
-
     transform:scale(1.1);
+}
+/* КНОПКИ ПЛАТФОРМ */
 
+.platform-btn{
+    margin-top:25px;
+    width:100%;
+    height:55px;
+    border:none;
+    border-radius:16px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.12);
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    backdrop-filter:blur(10px);
+    transition:0.3s;
+}
+/* HOVER КНОПОК */
+
+.platform-btn:hover{
+    transform:translateY(-3px);
+    border:1px solid #a855f7;
+    box-shadow:0 0 25px rgba(168,85,247,0.45);
 }
 .how-it-works{
     padding:120px 20px;
