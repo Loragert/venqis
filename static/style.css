@@ -449,7 +449,14 @@ button:hover{
     line-height:1.6;
 }
 .advantages{
+
+    width:100%;
+    max-width:1200px;
+
+    margin:0 auto;
+
     padding:120px 20px;
+
     text-align:center;
 }
 
