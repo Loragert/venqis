@@ -64,15 +64,15 @@ body{
 @keyframes floatPhone{
 
     0%{
-        transform:translateY(-140px);
+        transform:translateY(-840px);
     }
 
     50%{
-        transform:translateY(-160px);
+        transform:translateY(-860px);
     }
 
     100%{
-        transform:translateY(-140px);
+        transform:translateY(-840px);
     }
 }
 h1{
