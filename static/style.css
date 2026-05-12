@@ -24,14 +24,14 @@ body{
 
     flex-direction:column;
 
-    justify-content:file-start;
+    justify-content:flex-start;
 
     gap:24px;
 
     position:relative;
 
     z-index:2;
-    margin-top:-140px;
+    margin-top:-180px;
 
     padding-top:40px;
 }
