@@ -475,8 +475,8 @@ button:hover{
 
     flex-wrap:wrap;
 
-    max-width:1200px;
-    width:100%;
+    
+    width:fit-content;
     box-sizing:border-box;
 
     margin:0 auto;
