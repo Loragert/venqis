@@ -462,11 +462,10 @@ button:hover{
 
     display:grid;
 
-    grid-template-columns:
-    repeat(auto-fit, minmax(260px,1fr));
+    grid-template-columns:repeat(4, 1fr);
 
-    gap:30px;
-
+    gap:20px;
+    width:100%;
     max-width:1200px;
 
     margin:auto;
@@ -482,7 +481,7 @@ button:hover{
 
     border-radius:30px;
 
-    padding:50px 30px;
+    padding:28px 22px;
 
     backdrop-filter:blur(12px);
 
@@ -518,9 +517,9 @@ button:hover{
 
     color:#aaa;
 
-    font-size:18px;
+    font-size:15px;
 
-    line-height:1.6;
+    line-height:1.5;
 }
 .stats{
     padding:100px 20px;
@@ -572,7 +571,7 @@ button:hover{
 
 .stat-card h3{
 
-    font-size:48px;
+    font-size:28px;
 
     color:#a855f7;
 
