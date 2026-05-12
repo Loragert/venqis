@@ -76,9 +76,10 @@ body{
     }
 }
 h1{
-    font-size:140px;
+    font-size:180px;
     line-height:0.9;
-    letter-spacing:-5px;
+    width:100%;
+    letter-spacing:-8px;
     font-weight:bold;
     color:white;
     position:relative;
