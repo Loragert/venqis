@@ -280,43 +280,43 @@ button:hover{
 }
 
 .platform-grid{
-
     display:grid;
-
-    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
-
+    grid-template-columns:repeat(3, 1fr);
     gap:30px;
-    max-width:1200px;
+    width:100%;
+    max-width:1500px;
     margin:auto;
 }
 
 .platform-card{
-
+    min-height:240px;
     background:rgba(255,255,255,0.05);
-
     border:1px solid rgba(255,255,255,0.08);
+    border-radius:30px;
+    padding:40px 30px;
+    backdrop-filter:blur(14px);
+    transition:0.35s;
+    box-shadow:0 0 30px rgba(0,0,0,0.25);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    text-align:left;
+}
+.platform-card h3{
+    font-size:38px;
+    margin-bottom:20px;
+}
 
-    border-radius:25px;
-
-    padding:50px 20px;
-
-    font-size:28px;
-
-    font-weight:bold;
-
-    backdrop-filter:blur(12px);
-
-    transition:0.3s;
-
-    box-shadow:0 0 30px rgba(0,0,0,0.3);
+.platform-card p{
+    font-size:20px;
+    line-height:1.5;
+    color:#cfcfcf;
 }
 
 .platform-card:hover{
-
     transform:translateY(-10px);
-
     border:1px solid #7c4dff;
-
     box-shadow:0 0 40px rgba(124,77,255,0.5);
 }
 .how-it-works{
