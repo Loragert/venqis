@@ -467,17 +467,22 @@ button:hover{
 
 .advantages-grid{
 
-    display:grid;
+    display:flex;
 
-    grid-template-columns:repeat(4, 260px);
-
-    gap:20px;
     justify-content:center;
 
-    margin:auto;
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    max-width:1200px;
+
+    margin:0 auto;
 }
 
 .adv-card{
+    width:260px;
+    min-height:180px;
 
     background:
     rgba(255,255,255,0.05);
