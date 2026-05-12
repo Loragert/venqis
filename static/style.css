@@ -281,27 +281,31 @@ button:hover{
 
 .platform-grid{
     display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:30px;
+    grid-template-columns:repeat(6, 1fr);
+    gap:20px;
     width:100%;
-    max-width:1500px;
+    max-width:1700px;
     margin:auto;
 }
 
 .platform-card{
-    min-height:240px;
-    background:rgba(255,255,255,0.05);
+    background:rgba(255,255,255,0.04);
     border:1px solid rgba(255,255,255,0.08);
-    border-radius:30px;
-    padding:40px 30px;
-    backdrop-filter:blur(14px);
-    transition:0.35s;
-    box-shadow:0 0 30px rgba(0,0,0,0.25);
+    border-radius:24px;
+
+    padding:35px 20px;
+
+    min-height:220px;
+
     display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items:flex-start;
-    text-align:left;
+
+    backdrop-filter:blur(12px);
+
+    transition:0.3s;
+
+    box-shadow:0 0 30px rgba(0,0,0,0.25);
 }
 .platform-card h3{
     font-size:38px;
@@ -309,9 +313,9 @@ button:hover{
 }
 
 .platform-card p{
-    font-size:20px;
+    font-size:18px;
     line-height:1.5;
-    color:#cfcfcf;
+    color:#bfbfbf;
 }
 
 .platform-card:hover{
