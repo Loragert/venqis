@@ -24,9 +24,9 @@ body{
 
     flex-direction:column;
 
-    justify-content:center;
+    justify-content:file-start;
 
-    gap:18px;
+    gap:24px;
 
     position:relative;
 
