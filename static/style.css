@@ -53,7 +53,7 @@ body{
     width:1000px;
 
     max-width:none;
-    transform:translateY(60px);
+    
 
     animation:floatPhone 5s ease-in-out infinite;
 
@@ -64,15 +64,15 @@ body{
 @keyframes floatPhone{
 
     0%{
-        transform:translateY(60px);
+        transform:translateY(-40px);
     }
 
     50%{
-        transform:translateY(40px);
+        transform:translateY(-60px);
     }
 
     100%{
-        transform:translateY(60px);
+        transform:translateY(-40px);
     }
 }
 h1{
