@@ -254,57 +254,60 @@ header {
 }
 /* ===== PLATFORMS SECTION ===== */
 .platforms-section {
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 .platforms-section .container {
-    max-width: 1200px; /* така ж ширина як у features */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 .section-title {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 40px;
-    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    text-align: left; /* вирівняли вліво як блок зверху */
+    color: rgba(255,255,255,0.9);
 }
 
 .platforms-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* міняємо на 3 в ряд, було 6 */
-    gap: 20px;
-    background: rgba(255,255,255,0.03); /* додаємо фон як у features */
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 24px; /* як у features */
-    padding: 48px; /* внутрішній відступ */
+    display: flex;
+    gap: 12px;
+    justify-content: space-between; /* розтягує на всю ширину контейнера */
 }
 
 .platform-card {
-    padding: 24px 20px;
-    border-radius: 16px;
-    background: rgba(255,255,255,0.04); /* трохи світліший фон картки */
-    border: 1px solid rgba(255,255,255,0.1);
-    transition: 0.3s;
+    flex: 1; /* всі картки однакової ширини */
+    max-width: 180px; /* але не більше 180px */
+    padding: 16px 12px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: 0.2s;
     cursor: pointer;
-    text-align: left;
+    text-align: center;
 }
 
 .platform-card:hover {
-    background: rgba(184,76,255,0.1);
-    border-color: rgba(184,76,255,0.5);
-    transform: translateY(-4px);
-    box-shadow: 0 8px 32px rgba(184,76,255,0.2);
+    background: rgba(184,76,255,0.12);
+    border-color: rgba(184,76,255,0.4);
+    transform: translateY(-2px);
 }
 
 .platform-icon {
-    width: 56px;
-    height: 56px;
-    border-radius: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 0 16px 0;
+    margin: 0 auto 10px;
+}
+
+.platform-icon svg {
+    width: 24px;
+    height: 24px;
 }
 
 .platform-icon.instagram { background: linear-gradient(135deg, #F58529 0%, #DD2A7B 50%, #8134AF 100%); }
@@ -315,30 +318,23 @@ header {
 .platform-icon.maps { background: linear-gradient(135deg, #4285F4 0%, #34A853 50%, #FBBC05 75%, #EA4335 100%); }
 
 .platform-name {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
-
-.platform-desc {
     font-size: 13px;
-    color: rgba(255,255,255,0.6);
-    margin-bottom: 20px;
-    line-height: 1.5;
-    min-height: 42px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: rgba(255,255,255,0.8);
 }
 
 .platform-btn {
     width: 100%;
-    padding: 12px;
-    border-radius: 10px;
+    padding: 8px;
+    border-radius: 6px;
     background: transparent;
     border: 1px solid rgba(255,255,255,0.2);
     color: #FFFFFF;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .platform-btn:hover {
@@ -346,18 +342,26 @@ header {
     border-color: #B84CFF;
 }
 
-/* Адаптація */
-@media (max-width: 1024px) {
+/* На планшетах і мобілці - скрол вбік */
+@media (max-width: 900px) {
     .platforms-grid {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 32px;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 8px;
+        -webkit-overflow-scrolling: touch;
     }
-}
-
-@media (max-width: 640px) {
-    .platforms-grid {
-        grid-template-columns: 1fr;
-        padding: 24px;
+    
+    .platform-card {
+        flex: 0 0 140px; /* фіксована ширина на мобілці */
+    }
+    
+    /* Приховати скролбар */
+    .platforms-grid::-webkit-scrollbar {
+        height: 4px;
+    }
+    .platforms-grid::-webkit-scrollbar-thumb {
+        background: rgba(184,76,255,0.3);
+        border-radius: 2px;
     }
 }
 /* ===== RESULTS SECTION ===== */
