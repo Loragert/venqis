@@ -652,11 +652,13 @@ button:hover{
 }
 .hero-stats{
     background:red !important;
+    position:relative;
+    top:-120;
     display:flex;
 
     gap:20px;
 
-    margin-top:-80px;
+   
 
     width:100%;
 
