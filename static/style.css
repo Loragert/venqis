@@ -24,10 +24,15 @@ body {
 }
 
 /* ===== HEADER ===== */
-.header {
-    padding: 24px 0;
-    position: relative;
-    z-index: 100;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: rgba(10,10,15,0.8); /* Трохи затемнили щоб меню було видно */
+    backdrop-filter: blur(10px);
+    z-index: 1000;
 }
 
 .header-content {
@@ -116,13 +121,14 @@ body {
 /* ===== HERO SECTION ===== */
 .hero-section {
     min-height: 100vh; /* Розтягуємо на весь екран */
-    padding: 120px 0 80px; /* Додали верхній відступ від хедера */
+    padding: 0; /* Додали верхній відступ від хедера */
     display: flex;
     align-items: center; /* Центруємо все по вертикалі */
     position: relative;
 }
 
 .hero-grid {
+    padding-top: 100px; /* Компенсуємо висоту хедера */
     display: grid;
     grid-template-columns: 1.2fr 1fr; /* Ліва частина трохи ширша */
     gap: 80px;
