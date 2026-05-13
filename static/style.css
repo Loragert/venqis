@@ -651,7 +651,7 @@ button:hover{
     0 0 40px rgba(140,0,255,0.6);
 }
 .hero-stats{
-
+    background:red !important;
     display:flex;
 
     gap:20px;
