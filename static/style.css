@@ -142,7 +142,7 @@ body {
 }
 
 .hero-grid {
-    padding-top: 70px; /* Компенсуємо висоту хедера */
+    padding-top: 0px; /* Компенсуємо висоту хедера */
     display: grid;
     grid-template-columns: 1fr 1fr; /* Ліва частина трохи ширша */
     gap: 400px;
@@ -157,6 +157,7 @@ body {
     border: 1px solid rgba(184,76,255,0.3);
     font-size: 15px;
     margin-bottom: 32px;
+    margin-top: -60px;
 }
 
 .hero-title {
