@@ -653,16 +653,18 @@ button:hover{
 .hero-stats{
     background:red !important;
     position:absolute;
-    top:200;
+    top:620;
+    left:80;
+    z-index:20
     display:flex;
 
     gap:20px;
 
    
 
-    width:100%;
+    width:760px;
 
-    max-width:760px;
+   
 
     padding:22px 26px;
 
