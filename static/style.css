@@ -223,18 +223,17 @@ header {
 }
 
 .stats-bar {
+    max-width: 900px; /* Робимо вужчою ніж контейнер */
+    width: 100%;
+    margin: 0 auto; /* Центруємо всередині контейнера */
+    padding: 32px 40px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 28px 40px;
-    border-radius: 16px;
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(184,76,255,0.2);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-    width: 65%;
-    margin-left: 0;
-    margin-right: auto;
 }
 
 .stat-number {
