@@ -66,12 +66,11 @@ const translations = {
 function setLanguage(lang) {
     document.querySelectorAll('[data-lang]').forEach(element => {
         const key = element.getAttribute('data-lang');
-        if (translations[lang][key]) {
+        if (translations[lang] && translations[lang][key]) {
             element.textContent = translations[lang][key];
         }
     });
     
-    // Змінюємо активну кнопку
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.remove('active');
         if (btn.getAttribute('data-lang-code') === lang) {
@@ -79,7 +78,6 @@ function setLanguage(lang) {
         }
     });
     
-    // Зберігаємо вибір в localStorage
     localStorage.setItem('language', lang);
 }
 
