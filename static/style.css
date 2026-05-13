@@ -474,3 +474,47 @@ body {
         grid-template-columns: 1fr; /* На мобільному 1х6 */
     }
 }
+/* Фікс для телефонів */
+@media (max-width: 768px) {
+    /* Платформи: 1 картка в ряд */
+    .platforms-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px;
+    }
+    
+    /* Статистика: на всю ширину, по 2 в ряд */
+    .stats-bar {
+        width: 100% !important;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    
+    .stat-item {
+        width: 50%;
+        text-align: center;
+    }
+    
+    /* Результат: картки До і Після одна під одною */
+    .results-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+    
+    /* Стрілку між До і Після повертаємо вниз */
+    .result-arrow {
+        transform: rotate(90deg);
+        margin: 0 auto;
+    }
+}
+
+/* Фікс кольорів іконок */
+.platform-icon.youtube { 
+    background: #FF0000 !important; 
+}
+
+.platform-icon.maps { 
+    background: linear-gradient(135deg, #4285F4 0%, #34A853 50%, #FBBC05 75%, #EA4335 100%) !important;
+}
+.platform-icon.maps svg {
+    fill: #FFFFFF !important;
+}
