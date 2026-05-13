@@ -29,7 +29,15 @@ const translations = {
         result_growth: "Ріст",
         cta_title: "Створюйте сильніший діджитал-бренд разом з Venqis",
         cta_text: "Ми допоможемо вам масштабувати присутність у соціальних мережах та досягати нових вершин разом.",
-        cta_btn: "Запустити ріст"
+        cta_btn: "Запустити ріст",
+        feature_fast_title: 'Швидкий результат',
+        feature_fast_text: 'Перші результати вже через 24 години',
+        feature_safe_title: 'Безпечно',
+        feature_safe_text: 'Живі користувачі та надійні методи просування',
+        feature_effective_title: 'Ефективно',
+        feature_effective_text: 'Комплексний підхід для максимального росту',
+        feature_support_title: 'Підтримка 24/7',
+        feature_support_text: 'Ми завжди на зв\'язку та готові допомогти'
     },
     en: {
         nav_home: "Home",
@@ -61,7 +69,15 @@ const translations = {
         result_growth: "Growth",
         cta_title: "Build a stronger digital brand with Venqis",
         cta_text: "We will help you scale your social media presence and reach new heights together.",
-        cta_btn: "Launch Growth"
+        cta_btn: "Launch Growth",
+        feature_fast_title: 'Fast Results',
+        feature_fast_text: 'First results within 24 hours',
+        feature_safe_title: 'Safe',
+        feature_safe_text: 'Real users and reliable promotion methods',
+        feature_effective_title: 'Effective',
+        feature_effective_text: 'Comprehensive approach for maximum growth',
+        feature_support_title: '24/7 Support',
+        feature_support_text: 'We are always in touch and ready to help'
     }
 };
 
