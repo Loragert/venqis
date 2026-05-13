@@ -131,7 +131,7 @@ header {
     padding-top: 70px; /* Компенсуємо висоту хедера */
     display: grid;
     grid-template-columns: 1fr 1fr; /* Ліва частина трохи ширша */
-    gap: 100px;
+    gap: 400px;
     align-items: center;
 }
 
@@ -206,10 +206,14 @@ header {
     align-items: center;
     justify-content: center;
 }
+.hero-image {
+    position: relative;
+    transform: translateX(-60px); /* Зсуваємо телефон на 60px вліво */
+}
 
 .hero-image img {
     width: 100%;
-    max-width: 700px; /* Збільшили телефон */
+    max-width: 750px; /* Збільшили телефон */
     display: block;
     margin-left: auto;
     filter: drop-shadow(0 30px 80px rgba(184,76,255,0.3));
