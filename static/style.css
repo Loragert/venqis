@@ -649,69 +649,45 @@ button:hover{
 
     box-shadow:
     0 0 40px rgba(140,0,255,0.6);
-}
-.hero-stats{
-    background:red !important;
-    position:absolute;
-    top:480px;
-    left:80px;
-    z-index:20;
-    display:flex;
-
-    gap:40px;
-
-   
-
-    width:760px;
-
-   
-
-    padding:22px 26px;
-
-    border-radius:8px;
-
-    background:rgba(255,255,255,0.05);
-
-    border:1px solid rgba(255,255,255,0.08);
-
-    backdrop-filter:blur(12px);
-
-    box-shadow:0 0 40px rgba(0,0,0,0.25);
-}
-
-.hero-stat{
-
-    flex:1;
-
-    text-align:center;
-
-}
-.hero-stat:hover{
-
-    transform:translateY(-5px);
-
-    border:
-    1px solid #c084fc;
-
-    box-shadow:
-    0 0 25px rgba(192,132,252,0.35);
-}
-
-.hero-stat h3{
-
-    color:#b26dff;
-
-    font-size:42px;
-
-    margin-bottom:10px;
-}
-
-.hero-stat p{
+}.hero-stats{
+    position: relative; /* ← Головне: прибрали absolute */
+    margin-top: 32px; /* ← Відступ від кнопки "Розпочати" */
     
-    color:#aaa;
-    font-size:16px;
+    display: flex;
+    justify-content: space-between; /* Розкидає 10K+, 1M+ рівномірно */
+    align-items: center;
+    gap: 20px;
     
+    width: 100%; /* ← На всю ширину контейнера */
+    max-width: 760px; /* Щоб не був заширокий */
+    
+    padding: 24px 32px;
+    border-radius: 16px; /* Невелике скруглення як на макеті */
+    
+    /* Поки лишаємо червоним щоб ти його бачила */
+    background: #FF4500; 
+    
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 40px rgba(0,0,0,0.25);
 }
+
+/* Стилі для тексту всередині, щоб було як на макеті */
+.hero-stats .stat-item {
+    text-align: center;
+}
+.hero-stats .stat-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+.hero-stats .stat-label {
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    margin-top: 4px;
+}
+
+
 .mini-advantages{
 
     display:flex;
