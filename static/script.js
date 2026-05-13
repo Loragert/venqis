@@ -9,10 +9,7 @@ const translations = {
         hero_text: "Допомагаємо брендам, авторам та бізнесу масштабувати цифрову активність та посилювати онлайн-присутність.",
         hero_btn_start: "Розпочати",
         hero_btn_more: "Дізнатися більше",
-        stat_clients: "Клієнтів",
-        stat_orders: "Виконаних замовлень",
-        stat_satisfied: "Задоволених клієнтів",
-        stat_support: "Підтримка",
+        
         platforms_title: "Популярні платформи",
         platform_instagram: "Підписники, лайки, перегляди та Reels",
         platform_tiktok: "Підписники, лайки, перегляди, коментарі та репости",
@@ -37,7 +34,12 @@ const translations = {
         feature_effective_title: 'Ефективно',
         feature_effective_text: 'Комплексний підхід для максимального росту',
         feature_support_title: 'Підтримка 24/7',
-        feature_support_text: 'Ми завжди на зв\'язку та готові допомогти'
+        feature_support_text: 'Ми завжди на зв\'язку та готові допомогти',
+        stat_accounts: "Активних акаунтів",
+        stat_countries: "Країн покриття",
+        stat_results: "До перших результатів",
+        stat_support: "Підтримка",
+        
     },
     en: {
         nav_home: "Home",
@@ -49,10 +51,7 @@ const translations = {
         hero_text: "We help brands, creators and businesses scale digital activity and strengthen online presence.",
         hero_btn_start: "Get Started",
         hero_btn_more: "Learn More",
-        stat_clients: "Clients",
-        stat_orders: "Orders Completed",
-        stat_satisfied: "Satisfied Clients",
-        stat_support: "Support",
+        
         platforms_title: "Popular Platforms",
         platform_instagram: "Followers, likes, views and Reels",
         platform_tiktok: "Followers, likes, views, comments and shares",
@@ -77,7 +76,11 @@ const translations = {
         feature_effective_title: 'Effective',
         feature_effective_text: 'Comprehensive approach for maximum growth',
         feature_support_title: '24/7 Support',
-        feature_support_text: 'We are always in touch and ready to help'
+        feature_support_text: 'We are always in touch and ready to help',
+        stat_accounts: "Active Accounts",
+        stat_countries: "Countries Covered",
+        stat_results: "Until First Results",
+        stat_support: "Support",
     }
 };
 
