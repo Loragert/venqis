@@ -1,191 +1,212 @@
 <!DOCTYPE html>
 <html lang="uk">
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venqis</title>
-
-    <link rel="stylesheet" href="/static/style.css">
+    <title>Venqis - Інструменти для розвитку соціальних мереж</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 <body>
 
-    <nav class="navbar">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Venqis</div>
+                
+                <nav class="nav">
+                    <a href="#" class="nav-link active" data-lang="nav_home">Головна</a>
+                    <a href="#" class="nav-link" data-lang="nav_services">Послуги</a>
+                    <a href="#" class="nav-link" data-lang="nav_prices">Ціни</a>
+                    <a href="#" class="nav-link" data-lang="nav_contacts">Контакти</a>
+                </nav>
 
-        <div class="logo">
-            <div class="logo-box">V</div>
-        </div>
-
-        <div class="menu">
-
-            <a href="#">
-                Головна
-            </a>
-
-            <a href="#">
-                Послуги
-            </a>
-
-            <a href="#">
-                Ціни
-            </a>
-
-            <a href="#">
-                Контакти
-            </a>
-
-        </div>
-
-    </nav>
-
-    <div class="hero">
-
-        <div class="hero-left">
-            <div class="hero-badge">
-                Інструменти для розвитку соціальних мереж
+                <button class="btn-header" data-lang="nav_start">Почати</button>
             </div>
+        </div>
+    </header>
 
-            <h1>Venqis</h1>
-
-            <p class="hero-text">
-                 Допомагаємо брендам, авторам та бізнесу
-                масштабувати цифрову активність
-               та посилювати онлайн-присутність.
-            </p>
-
-            <div class="hero-actions">
-
-                <button class="hero-btn">
-                    Розпочати
-                </button>
-
-                <div class="hero-more">
-                    <div class="play-icon">▶</div>
-                    <span>Дізнатися більше</span>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                
+                <!-- Ліва частина з текстом -->
+                <div class="hero-content">
+                    <div class="hero-badge" data-lang="hero_badge">
+                        Інструменти для розвитку соціальних мереж
+                    </div>
+                    
+                    <h1 class="hero-title">Venqis</h1>
+                    
+                    <p class="hero-text" data-lang="hero_text">
+                        Допомагаємо брендам, авторам та бізнесу масштабувати цифрову активність та посилювати онлайн-присутність.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <button class="btn-primary" data-lang="hero_btn_start">
+                            Розпочати
+                        </button>
+                        
+                        <button class="btn-play">
+                            <i class="fa-solid fa-play"></i>
+                            <span data-lang="hero_btn_more">Дізнатися більше</span>
+                        </button>
+                    </div>
                 </div>
+
+                <!-- Права частина з телефоном -->
+                <div class="hero-image">
+                    <img src="/static/phone.png" alt="Venqis App">
+                </div>
+
             </div>
-            
-            <!-- ВСТАВЛЯЄШ СЮДИ, ВСЕРЕДИНІ .hero-left -->
-            <div class="hero-stats">
+        </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-bar">
                 <div class="stat-item">
                     <div class="stat-number">10K+</div>
-                    <div class="stat-label">Клієнтів</div>
+                    <div class="stat-label" data-lang="stat_clients">Клієнтів</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">1M+</div>
-                    <div class="stat-label">Виконаних замовлень</div>
+                    <div class="stat-label" data-lang="stat_orders">Виконаних замовлень</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">99%</div>
-                    <div class="stat-label">Задоволених клієнтів</div>
+                    <div class="stat-label" data-lang="stat_satisfied">Задоволених клієнтів</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">24/7</div>
-                    <div class="stat-label">Підтримка</div>
+                    <div class="stat-label" data-lang="stat_support">Підтримка</div>
                 </div>
             </div>
         </div>
-
-        <div class="hero-right">
-
-            <img src="/static/phone.png" alt="Venqis Phone">
-
-        </div>
-
-    </div>
-    
-    <section class="mini-advantages">
-
-        <div class="mini-adv-card">
-            <i class="fa-solid fa-rocket adv-icon"></i>
-            <h3>Швидкий результат</h3>
-            <p>Перші результати вже через короткий час</p>
-        </div>
-
-        <div class="mini-adv-card">
-            <i class="fa-solid fa-shield-halved adv-icon"></i>
-            <h3>Безпечно</h3>
-            <p>Стабільні рішення для розвитку соцмереж</p>
-        </div>
-
-        <div class="mini-adv-card">
-            <i class="fa-solid fa-chart-line adv-icon"></i>
-            <h3>Ефективно</h3>
-            <p>Зручні інструменти для масштабування активності</p>
-        </div>
-
-        <div class="mini-adv-card">
-            <i class="fa-solid fa-headset adv-icon"></i>
-            <h3>Підтримка 24/7</h3>
-            <p>Допомога та супровід на кожному етапі</p>
-        </div>
-
     </section>
-    <section class="platforms">
 
-        <h2>Платформи та цифрові рішення</h2>
+    <!-- PLATFORMS SECTION -->
+    <section class="platforms-section">
+        <div class="container">
+            <h2 class="section-title" data-lang="platforms_title">Популярні платформи</h2>
+            
+            <div class="platforms-grid">
+                <div class="platform-card">
+                    <i class="fa-brands fa-instagram platform-icon"></i>
+                    <h3>Instagram</h3>
+                    <p data-lang="platform_instagram">Підписники, лайки, перегляди та Reels</p>
+                    <button class="btn-order" data-lang="btn_order">Замовити</button>
+                </div>
 
-       <div class="platform-grid">
+                <div class="platform-card">
+                    <i class="fa-brands fa-tiktok platform-icon"></i>
+                    <h3>TikTok</h3>
+                    <p data-lang="platform_tiktok">Підписники, лайки, перегляди, коментарі та репости</p>
+                    <button class="btn-order" data-lang="btn_order">Замовити</button>
+                </div>
 
-           <div class="platform-card">
-               <i class="fa-brands fa-instagram"></i>
-               <h3>Instagram</h3>
-               <p>Підписники, лайки, перегляди та Reels</p>
-               <button class="platform-btn">
-                               Замовити
-               </button>
-           </div>
-           
-           <div class="platform-card">
-               <i class="fa-brands fa-facebook"></i>
-               <h3>Facebook</h3>
-               <p>Сторінки, реакції, охоплення та активність</p>
-               <button class="platform-btn">
-                               Замовити
-               </button>
-           </div>
+                <div class="platform-card">
+                    <i class="fa-brands fa-telegram platform-icon"></i>
+                    <h3>Telegram</h3>
+                    <p data-lang="platform_telegram">Підписники в канал, перегляди постів, реакції</p>
+                    <button class="btn-order" data-lang="btn_order">Замовити</button>
+                </div>
 
-           <div class="platform-card">
-               <i class="fa-brands fa-tiktok"></i>
-               <h3>TikTok</h3>
-               <p>Перегляди, рекомендації та активність</p>
-               <button class="platform-btn">
-                               Замовити
-               </button>
-           </div>
+                <div class="platform-card">
+                    <i class="fa-brands fa-youtube platform-icon"></i>
+                    <h3>YouTube</h3>
+                    <p data-lang="platform_youtube">Підписники, перегляди, лайки, коментарі та годининики</p>
+                    <button class="btn-order" data-lang="btn_order">Замовити</button>
+                </div>
 
-           <div class="platform-card">
-               <i class="fa-brands fa-telegram"></i>
-               <h3>Telegram</h3>
-               <p>Підписники, реакції та перегляди</p>
-               <button class="platform-btn">
-                               Замовити
-               </button>
-           </div>
+                <div class="platform-card">
+                    <i class="fa-solid fa-location-dot platform-icon"></i>
+                    <h3>Google Maps</h3>
+                    <p data-lang="platform_maps">Відгуки, рейтинги та локальна популярність</p>
+                    <button class="btn-order" data-lang="btn_order">Замовити</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-           <div class="platform-card">
-               <i class="fa-brands fa-youtube"></i>
-               <h3>YouTube</h3>
-               <p>Перегляди, підписники та просування</p>
-               <button class="platform-btn">
-                               Замовити
-               </button>
-           </div>
+    <!-- RESULTS SECTION -->
+    <section class="results-section">
+        <div class="container">
+            <h2 class="section-title" data-lang="results_title">Результат, який видно</h2>
+            
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-badge" data-lang="result_before">До</div>
+                    <div class="result-stats">
+                        <div class="result-stat">
+                            <i class="fa-regular fa-user"></i>
+                            <span>230</span>
+                            <p data-lang="result_followers">Підписників</p>
+                        </div>
+                        <div class="result-stat">
+                            <i class="fa-brands fa-youtube"></i>
+                            <span>1.2K</span>
+                            <p data-lang="result_views">Переглядів</p>
+                        </div>
+                        <div class="result-stat">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>2.1%</span>
+                            <p>Engagement</p>
+                        </div>
+                    </div>
+                </div>
 
-           <div class="platform-card">
-               <i class="fa-solid fa-location-dot"></i>
-               <h3>Google Maps</h3>
-               <p>Відгуки, рейтинг та локальне просування</p>
-               <button class="platform-btn">
-                               Замовити
-               </button>
-           </div>
+                <div class="result-arrow">
+                    <i class="fa-solid fa-angles-right"></i>
+                </div>
 
-       </div>
+                <div class="result-card result-card-active">
+                    <div class="result-badge" data-lang="result_after">Після</div>
+                    <div class="result-stats">
+                        <div class="result-stat">
+                            <i class="fa-regular fa-user"></i>
+                            <span>12.8K</span>
+                            <p data-lang="result_followers">Підписників</p>
+                        </div>
+                        <div class="result-stat">
+                            <i class="fa-brands fa-youtube"></i>
+                            <span>250K</span>
+                            <p data-lang="result_views">Переглядів</p>
+                        </div>
+                        <div class="result-stat">
+                            <i class="fa-solid fa-rocket"></i>
+                            <span>8.7%</span>
+                            <p>Engagement</p>
+                        </div>
+                    </div>
+                    <div class="result-growth">+320% <span data-lang="result_growth">Ріст</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-block">
+                <div class="cta-content">
+                    <h2 data-lang="cta_title">Створюйте сильніший діджитал-бренд разом з Venqis</h2>
+                    <p data-lang="cta_text">Ми допоможемо вам масштабувати присутність у соціальних мережах та досягати нових вершин разом.</p>
+                    <button class="btn-primary" data-lang="cta_btn">
+                        Запустити ріст <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="cta-image">
+                    <!-- Тут буде графік -->
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <script src="script.js"></script>
 </body>
 </html>
