@@ -29,7 +29,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 0;
+    padding: 16px 0;
     background: rgba(10,10,15,0.8); /* Трохи затемнили щоб меню було видно */
     backdrop-filter: blur(10px);
     z-index: 1000;
@@ -128,7 +128,7 @@ header {
 }
 
 .hero-grid {
-    padding-top: 100px; /* Компенсуємо висоту хедера */
+    padding-top: 70px; /* Компенсуємо висоту хедера */
     display: grid;
     grid-template-columns: 1.2fr 1fr; /* Ліва частина трохи ширша */
     gap: 80px;
@@ -146,7 +146,7 @@ header {
 }
 
 .hero-title {
-    font-size: 80px; /* Залишили як у тебе */
+    font-size: 88px; /* Залишили як у тебе */
     font-weight: 800;
     line-height: 1;
     margin-bottom: 24px;
@@ -209,7 +209,7 @@ header {
 
 .hero-image img {
     width: 100%;
-    max-width: 550px; /* Збільшили телефон */
+    max-width: 580px; /* Збільшили телефон */
     display: block;
     margin-left: auto;
 }
