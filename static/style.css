@@ -653,7 +653,7 @@ button:hover{
 .hero-stats{
     background:red !important;
     position:relative;
-    top:-1200;
+    top:-5200;
     display:flex;
 
     gap:20px;
