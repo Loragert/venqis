@@ -456,3 +456,21 @@ body {
     .platforms-grid { grid-template-columns: 1fr; }
     .hero-title { font-size: 36px; }
 }
+@media (max-width: 1400px) {
+    .platforms-grid {
+        grid-template-columns: repeat(3, 1fr); /* На ноутах 3х2 */
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .platforms-grid {
+        grid-template-columns: repeat(2, 1fr); /* На планшеті 2х3 */
+    }
+}
+
+@media (max-width: 480px) {
+    .platforms-grid {
+        grid-template-columns: 1fr; /* На мобільному 1х6 */
+    }
+}
