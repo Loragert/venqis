@@ -49,7 +49,10 @@ body {
 .logo-v {
     font-size: 48px;
     font-weight: 900;
-    color: #FFFFFF;
+    background: linear-gradient(135deg, #B84CFF 0%, #7B2FFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     letter-spacing: -2px;
 }
 
