@@ -652,6 +652,10 @@ button:hover{
 }
 .hero-stats{
     background:red !important;
+    position:absolute !important;
+    top:0 !important;
+    left:0 !important;
+    z-index:9999 !important;
     position:relative;
     top:-5200;
     display:flex;
