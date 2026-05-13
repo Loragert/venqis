@@ -258,7 +258,7 @@ header {
 }
 
 .platforms-section .container {
-    max-width: 1200px; /* така ж ширина як у блока зверху */
+    max-width: 1200px; /* така ж ширина як у features */
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -266,25 +266,28 @@ header {
 .section-title {
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
 .platforms-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px; /* було 16px */
-    width: 100%; /* прибрали max-width і margin */
+    grid-template-columns: repeat(3, 1fr); /* міняємо на 3 в ряд, було 6 */
+    gap: 20px;
+    background: rgba(255,255,255,0.03); /* додаємо фон як у features */
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 24px; /* як у features */
+    padding: 48px; /* внутрішній відступ */
 }
 
 .platform-card {
-    padding: 28px 20px; /* було 24px 16px */
-    border-radius: 20px; /* було 16px */
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.08); /* було 0.1 */
+    padding: 24px 20px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.04); /* трохи світліший фон картки */
+    border: 1px solid rgba(255,255,255,0.1);
     transition: 0.3s;
     cursor: pointer;
-    text-align: left; /* було center по секції */
+    text-align: left;
 }
 
 .platform-card:hover {
@@ -301,7 +304,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 0 16px 0; /* прибрали auto */
+    margin: 0 0 16px 0;
 }
 
 .platform-icon.instagram { background: linear-gradient(135deg, #F58529 0%, #DD2A7B 50%, #8134AF 100%); }
@@ -318,17 +321,17 @@ header {
 }
 
 .platform-desc {
-    font-size: 13px; /* було 12px */
+    font-size: 13px;
     color: rgba(255,255,255,0.6);
-    margin-bottom: 20px; /* було 16px */
+    margin-bottom: 20px;
     line-height: 1.5;
     min-height: 42px;
 }
 
 .platform-btn {
     width: 100%;
-    padding: 12px; /* було 10px */
-    border-radius: 10px; /* було 8px */
+    padding: 12px;
+    border-radius: 10px;
     background: transparent;
     border: 1px solid rgba(255,255,255,0.2);
     color: #FFFFFF;
@@ -344,29 +347,19 @@ header {
 }
 
 /* Адаптація */
-@media (max-width: 1200px) {
-    .platforms-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .platforms-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-    .platforms-section .container {
-        padding: 0 16px;
+        padding: 32px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
     .platforms-grid {
         grid-template-columns: 1fr;
+        padding: 24px;
     }
 }
-
-
-
 /* ===== RESULTS SECTION ===== */
 .results-section {
     padding: 0 0 100px 0;
