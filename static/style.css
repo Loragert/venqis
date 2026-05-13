@@ -216,7 +216,7 @@ header {
 
 /* ===== STATS SECTION ===== */
 .stats-section {
-    margin-top: -200px;
+    margin-top: -500px;
     position: relative;
     z-index: 5;
     padding: 80px;
