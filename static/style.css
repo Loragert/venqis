@@ -83,6 +83,35 @@ body {
     border-color: #B84CFF;
     background: rgba(184,76,255,0.1);
 }
+.lang-switcher {
+    display: flex;
+    gap: 4px;
+    padding: 4px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.lang-btn {
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: transparent;
+    border: none;
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.lang-btn.active {
+    background: #B84CFF;
+    color: #FFFFFF;
+}
+
+.lang-btn:hover:not(.active) {
+    color: #FFFFFF;
+}
 
 /* ===== HERO SECTION ===== */
 .hero-section {
