@@ -18,9 +18,9 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 /* ===== HEADER ===== */
@@ -526,4 +526,9 @@ header {
 }
 .platform-icon.maps svg {
     fill: #FFFFFF !important;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
 }
