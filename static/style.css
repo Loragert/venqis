@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-.body {
+body {
     background: radial-gradient(ellipse at 70% 50%, #2A0A4A 0%, #0A0014 50%, #000000 100%);
     background-attachment: fixed;
     min-height: 100vh;
@@ -17,23 +17,12 @@
 body::before {
     content: '';
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: -1;
-    background-image: 
-        radial-gradient(2px 2px at 20% 30%, #FFFFFF, transparent),
-        radial-gradient(2px 2px at 60% 70%, #B84CFF, transparent),
-        radial-gradient(1px 1px at 50% 50%, #FFFFFF, transparent),
-        radial-gradient(1px 1px at 80% 10%, #FFFFFF, transparent),
-        radial-gradient(2px 2px at 90% 60%, #B84CFF, transparent),
-        radial-gradient(1px 1px at 33% 80%, #FFFFFF, transparent),
-        radial-gradient(1px 1px at 15% 60%, #FFFFFF, transparent),
-        radial-gradient(2px 2px at 75% 25%, #B84CFF, transparent);
-    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px, 450px 450px, 300px 300px, 400px 400px, 500px 500px;
-    opacity: 0.7;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: red;
+    z-index: 9999;
 }
 
 @keyframes stars {
