@@ -318,6 +318,18 @@ body {
     justify-content: center;
     margin: 0 auto 10px;
 }
+.platform-icon img {
+    width: 48px;
+    height: 48px;
+    display: block;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.platform-card:hover .platform-icon img {
+    transform: scale(1.1);
+    filter: drop-shadow(0 8px 20px rgba(184,76,255,0.5));
+}
 
 .platform-icon svg {
     width: 24px;
