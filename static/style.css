@@ -281,86 +281,59 @@ body {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 24px;
-    text-align: left; /* вирівняли вліво як блок зверху */
+    text-align: left;
     color: rgba(255,255,255,0.9);
 }
 
 .platforms-grid {
     display: flex;
-    gap: 12px;
-    justify-content: space-between; /* розтягує на всю ширину контейнера */
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 
 .platform-card {
-    flex: 1; /* всі картки однакової ширини */
-    max-width: 180px; /* але не більше 180px */
-    padding: 16px 12px;
-    border-radius: 12px;
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.08);
-    transition: 0.2s;
-    cursor: pointer;
-    text-align: center;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(184, 76, 255, 0.2);
+    border-radius: 8px;
+    padding: 20px 12px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    flex: 1;
+    max-width: 140px;
+    transition: 0.2s ease;
 }
 
 .platform-card:hover {
-    background: rgba(184,76,255,0.12);
-    border-color: rgba(184,76,255,0.4);
+    background: rgba(184, 76, 255, 0.08);
+    border-color: rgba(184, 76, 255, 0.5);
     transform: translateY(-2px);
 }
 
-.platform-icon {
-    width: 44px;
-    height: 44px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 10px;
-}
-.platform-icon img {
-    width: 48px;
-    height: 48px;
+.platform-card img {
+    width: 64px;
+    height: 64px;
     display: block;
-    border-radius: 12px;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
 }
 
-.platform-card:hover .platform-icon img {
-    transform: scale(1.1);
-    filter: drop-shadow(0 8px 20px rgba(184,76,255,0.5));
-}
-
-.platform-icon svg {
-    width: 24px;
-    height: 24px;
-}
-
-.platform-icon.instagram { background: linear-gradient(135deg, #F58529 0%, #DD2A7B 50%, #8134AF 100%); }
-.platform-icon.tiktok { background: #000000; }
-.platform-icon.facebook { background: #1877F2; }
-.platform-icon.telegram { background: #0088CC; }
-.platform-icon.youtube { background: #FF0000; }
-.platform-icon.maps { background: linear-gradient(135deg, #4285F4 0%, #34A853 50%, #FBBC05 75%, #EA4335 100%); }
-
-.platform-name {
-    font-size: 13px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    color: rgba(255,255,255,0.8);
+.platform-card:hover img {
+    transform: scale(1.05);
 }
 
 .platform-btn {
     width: 100%;
-    padding: 8px;
+    padding: 8px 12px;
     border-radius: 6px;
-    background: transparent;
-    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(184, 76, 255, 0.15);
+    border: 1px solid rgba(184, 76, 255, 0.3);
     color: #FFFFFF;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.2s ease;
 }
 
 .platform-btn:hover {
@@ -368,26 +341,34 @@ body {
     border-color: #B84CFF;
 }
 
-/* На планшетах і мобілці - скрол вбік */
+/* Планшет */
 @media (max-width: 900px) {
     .platforms-grid {
-        overflow-x: auto;
-        justify-content: flex-start;
-        padding-bottom: 8px;
-        -webkit-overflow-scrolling: touch;
+        flex-wrap: wrap;
+        gap: 10px;
     }
     
     .platform-card {
-        flex: 0 0 140px; /* фіксована ширина на мобілці */
+        flex: 0 0 calc(33.333% - 7px);
+        max-width: none;
+    }
+}
+
+/* Мобілка */
+@media (max-width: 500px) {
+    .platform-card {
+        flex: 0 0 calc(50% - 5px);
+        padding: 16px 8px 12px;
     }
     
-    /* Приховати скролбар */
-    .platforms-grid::-webkit-scrollbar {
-        height: 4px;
+    .platform-card img {
+        width: 56px;
+        height: 56px;
     }
-    .platforms-grid::-webkit-scrollbar-thumb {
-        background: rgba(184,76,255,0.3);
-        border-radius: 2px;
+    
+    .platform-btn {
+        font-size: 12px;
+        padding: 7px 8px;
     }
 }
 /* ===== RESULTS SECTION ===== */
