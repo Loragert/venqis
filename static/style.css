@@ -268,53 +268,56 @@ body {
 }
 /* ===== PLATFORMS SECTION ===== */
 .platforms-section {
-    padding: 40px 0;
+    padding: 60px 0;
 }
 
 .platforms-section .container {
-    max-width: 1400px;
+    max-width: 1400px; /* Такий самий як у секції Venqis зверху */
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 24px; /* Відступи з боків як на головному екрані */
 }
 
 .platforms-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* 6 карток на всю ширину */
-    gap: 12px; /* Відстань між картками */
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px; /* Відстань між картками */
 }
 
 .platform-card {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(184, 76, 255, 0.2);
-    border-radius: 12px;
-    padding: 24px 16px 18px;
+    border-radius: 16px;
+    padding: 20px 16px 16px;
     display: flex;
-    flex-direction: column; /* ВЕРТИКАЛЬНО: іконка зверху, кнопка знизу */
-    align-items: center;
-    gap: 18px;
+    flex-direction: column;
+    gap: 16px;
     transition: 0.2s ease;
+    aspect-ratio: 3 / 4; /* ВИСОКИЙ ПРЯМОКУТНИК як ти намалювала */
 }
 
 .platform-card:hover {
     background: rgba(184, 76, 255, 0.08);
     border-color: rgba(184, 76, 255, 0.5);
-    transform: translateY(-3px);
+    transform: translateY(-4px);
 }
 
 .platform-card img {
-    width: 72px;
-    height: 72px;
-    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100px; /* Велика іконка */
+    margin: 0 auto;
+    flex: 1; /* Іконка розтягується і займає весь верх */
+    object-fit: contain;
 }
 
 .platform-btn {
     width: 100%;
-    padding: 12px 16px;
-    border-radius: 8px;
-    background: rgba(184, 76, 255, 0.2);
-    border: 1px solid rgba(184, 76, 255, 0.4);
+    padding: 14px 10px;
+    border-radius: 10px;
+    background: rgba(184, 76, 255, 0.15);
+    border: 1px solid rgba(184, 76, 255, 0.3);
     color: #FFFFFF;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     transition: 0.2s ease;
@@ -330,27 +333,35 @@ body {
     .platforms-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+    
+    .platform-card {
+        aspect-ratio: 3 / 3.5;
+    }
 }
 
 /* Мобілка: 2 картки в ряд */
 @media (max-width: 650px) {
+    .platforms-section .container {
+        padding: 0 16px;
+    }
+    
     .platforms-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 12px;
     }
     
     .platform-card {
-        padding: 20px 12px 14px;
+        padding: 16px 12px 12px;
+        aspect-ratio: 3 / 4;
     }
     
     .platform-card img {
-        width: 60px;
-        height: 60px;
+        max-width: 80px;
     }
     
     .platform-btn {
         font-size: 14px;
-        padding: 10px 12px;
+        padding: 12px 8px;
     }
 }
 /* ===== RESULTS SECTION ===== */
