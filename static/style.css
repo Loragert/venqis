@@ -667,7 +667,7 @@ body::before {
     align-items: center;
     padding: 120px 0 80px;
     overflow: hidden;
-    background: #0A0A0F;
+    background: transparent;
 }
 
 .hero-bg-grid {
