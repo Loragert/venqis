@@ -277,32 +277,21 @@ body {
     padding: 0 20px;
 }
 
-.section-title {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 24px;
-    text-align: left;
-    color: rgba(255,255,255,0.9);
-}
-
 .platforms-grid {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 карток на всю ширину */
+    gap: 12px; /* Відстань між картками */
 }
 
 .platform-card {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(184, 76, 255, 0.2);
-    border-radius: 8px;
-    padding: 20px 12px 14px;
+    border-radius: 12px;
+    padding: 24px 16px 18px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* ВЕРТИКАЛЬНО: іконка зверху, кнопка знизу */
     align-items: center;
-    gap: 14px;
-    flex: 1;
-    max-width: 140px;
+    gap: 18px;
     transition: 0.2s ease;
 }
 
@@ -316,11 +305,6 @@ body {
     width: 72px;
     height: 72px;
     display: block;
-    transition: 0.2s ease;
-}
-
-.platform-card:hover img {
-    transform: scale(1.05);
 }
 
 .platform-btn {
@@ -330,45 +314,43 @@ body {
     background: rgba(184, 76, 255, 0.2);
     border: 1px solid rgba(184, 76, 255, 0.4);
     color: #FFFFFF;
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
     cursor: pointer;
     transition: 0.2s ease;
 }
 
-.platform-btn:hover {
+.platform-card:hover .platform-btn {
     background: #B84CFF;
     border-color: #B84CFF;
 }
 
-/* Планшет */
-@media (max-width: 900px) {
+/* Планшет: 3 картки в ряд */
+@media (max-width: 1100px) {
     .platforms-grid {
-        flex-wrap: wrap;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Мобілка: 2 картки в ряд */
+@media (max-width: 650px) {
+    .platforms-grid {
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
     
     .platform-card {
-        flex: 0 0 calc(33.333% - 7px);
-        max-width: none;
-    }
-}
-
-/* Мобілка */
-@media (max-width: 500px) {
-    .platform-card {
-        flex: 0 0 calc(50% - 5px);
-        padding: 16px 8px 12px;
+        padding: 20px 12px 14px;
     }
     
     .platform-card img {
-        width: 56px;
-        height: 56px;
+        width: 60px;
+        height: 60px;
     }
     
     .platform-btn {
-        font-size: 12px;
-        padding: 7px 8px;
+        font-size: 14px;
+        padding: 10px 12px;
     }
 }
 /* ===== RESULTS SECTION ===== */
