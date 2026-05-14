@@ -7,14 +7,14 @@
     box-sizing: border-box;
 }
 
-body {
+.body {
     background: radial-gradient(ellipse at 70% 50%, #2A0A4A 0%, #0A0014 50%, #000000 100%);
     background-attachment: fixed;
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
 }
-body::before {
+.body::before {
     content: '';
     position: fixed;
     top: 0;
