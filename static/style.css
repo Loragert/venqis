@@ -17,25 +17,25 @@ body {
 body::before {
     content: '';
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+    width: 1px;
+    height: 1px;
+    background: transparent;
     z-index: -1;
-    background-image: 
-        radial-gradient(1px 1px at 25px 5px, #FFF, transparent),
-        radial-gradient(1px 1px at 50px 25px, #FFF, transparent),
-        radial-gradient(1px 1px at 125px 20px, #FFF, transparent),
-        radial-gradient(1.5px 1.5px at 50px 75px, #FFF, transparent),
-        radial-gradient(2px 2px at 15px 125px, #B84CFF, transparent),
-        radial-gradient(2px 2px at 110px 80px, #FFF, transparent),
-        radial-gradient(1px 1px at 170px 30px, #FFF, transparent),
-        radial-gradient(1px 1px at 200px 90px, #B84CFF, transparent),
-        radial-gradient(1.5px 1.5px at 250px 10px, #FFF, transparent);
-    background-size: 300px 200px;
-    background-repeat: repeat;
-    opacity: 0.6;
+    box-shadow: 
+        25vw 15vh #FFF, 50vw 25vh #B84CFF, 75vw 10vh #FFF, 10vw 40vh #FFF,
+        35vw 60vh #B84CFF, 60vw 45vh #FFF, 85vw 30vh #FFF, 20vw 75vh #FFF,
+        45vw 85vh #B84CFF, 70vw 70vh #FFF, 95vw 55vh #FFF, 5vw 90vh #B84CFF,
+        30vw 5vh #FFF, 55vw 95vh #FFF, 80vw 65vh #B84CFF, 15vw 20vh #FFF,
+        40vw 35vh #FFF, 65vw 15vh #B84CFF, 90vw 80vh #FFF, 25vw 50vh #FFF,
+        50vw 70vh #B84CFF, 75vw 85vh #FFF, 10vw 10vh #FFF, 35vw 25vh #B84CFF,
+        60vw 90vh #FFF, 85vw 50vh #FFF, 20vw 65vh #B84CFF, 45vw 40vh #FFF,
+        70vw 20vh #FFF, 95vw 35vh #B84CFF, 15vw 80vh #FFF, 40vw 55vh #FFF,
+        65vw 75vh #B84CFF, 90vw 15vh #FFF, 25vw 30vh #FFF, 50vw 5vh #B84CFF,
+        75vw 60vh #FFF, 10vw 45vh #FFF, 35vw 80vh #B84CFF, 60vw 25vh #FFF,
+        85vw 90vh #FFF, 20vw 15vh #B84CFF, 45vw 95vh #FFF, 70vw 50vh #FFF,
+        95vw 70vh #B84CFF, 15vw 35vh #FFF, 40vw 10vh #FFF, 65vw 40vh #B84CFF,
+        90vw 25vh #FFF, 25vw 85vh #FFF;
+    opacity: 0.7;
 }
 
 @keyframes stars {
