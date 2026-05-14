@@ -14,7 +14,7 @@
     position: relative;
     overflow-x: hidden;
 }
-.body::before {
+body::before {
     content: '';
     position: fixed;
     top: 0;
