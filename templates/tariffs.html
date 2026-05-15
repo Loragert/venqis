@@ -1,1 +1,267 @@
+<!DOCTYPE html>
+<html lang="uk">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Venqis - Тарифи</title>
+
+    <link rel="stylesheet" href="../static/tariffs.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-row">
+
+                <a href="index.html" class="logo">
+                    <span class="logo-mark">V</span>
+                    <span class="logo-text">Venqis</span>
+                </a>
+
+                <nav class="nav">
+                    <a href="index.html" data-lang="nav_home">Головна</a>
+                    <a href="#" data-lang="nav_services">Послуги</a>
+                    <a href="tariffs.html" class="active" data-lang="nav_prices">Тарифи</a>
+                    <a href="#" data-lang="nav_faq">FAQ</a>
+                    <a href="#" data-lang="nav_contacts">Контакти</a>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="lang-switcher">
+                        <button class="lang-btn active" data-lang-code="uk" type="button">UA</button>
+                        <span>|</span>
+                        <button class="lang-btn" data-lang-code="en" type="button">EN</button>
+                    </div>
+
+                    <a href="#" class="btn btn-header" data-lang="nav_start">Розпочати</a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="pricing-hero">
+            <div class="container">
+
+                <div class="pricing-heading">
+                    <h1 data-lang="pricing_title">Тарифи Venqis</h1>
+
+                    <p data-lang="pricing_subtitle">
+                        Оберіть окрему послугу або готовий пакет для стабільного росту та активності у соціальних
+                        мережах.
+                    </p>
+                </div>
+
+                <div class="pricing-tabs">
+                    <button class="pricing-tab active" type="button" data-category="social">
+                        <i class="fa-solid fa-users"></i>
+                        <span data-lang="tab_social">Соцмережі</span>
+                    </button>
+
+                    <button class="pricing-tab" type="button" data-category="telegram">
+                        <i class="fa-brands fa-telegram"></i>
+                        <span>Telegram</span>
+                    </button>
+
+                    <button class="pricing-tab" type="button" data-category="youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                        <span>YouTube</span>
+                    </button>
+
+                    <button class="pricing-tab" type="button" data-category="maps">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Google Maps</span>
+                    </button>
+                </div>
+
+                <div class="pricing-cards">
+
+                    <article class="price-card">
+                        <h2 data-plan-title="start">START</h2>
+                        <p data-plan-subtitle="start">Для першого тесту</p>
+
+                        <div class="price">
+                            <span data-lang="price_from">від</span>
+                            <strong data-plan-price="start">149</strong>
+                            <span data-lang="currency_uah">грн</span>
+                        </div>
+
+                        <ul data-plan-list="start"></ul>
+
+                        <a href="#" class="price-btn" data-lang="add_to_chat">Додати в чат</a>
+                    </article>
+
+                    <article class="price-card price-card-featured">
+                        <div class="popular-badge" data-lang="popular_badge">Найпопулярніший</div>
+
+                        <h2 data-plan-title="boost">BOOST</h2>
+                        <p data-plan-subtitle="boost">Найкращий баланс росту</p>
+
+                        <div class="price">
+                            <span data-lang="price_from">від</span>
+                            <strong data-plan-price="boost">349</strong>
+                            <span data-lang="currency_uah">грн</span>
+                        </div>
+
+                        <ul data-plan-list="boost"></ul>
+
+                        <a href="#" class="price-btn price-btn-primary" data-lang="add_to_chat">Додати в чат</a>
+                    </article>
+
+                    <article class="price-card">
+                        <h2 data-plan-title="pro">PRO</h2>
+                        <p data-plan-subtitle="pro">Для активного масштабування</p>
+
+                        <div class="price">
+                            <span data-lang="price_from">від</span>
+                            <strong data-plan-price="pro">699</strong>
+                            <span data-lang="currency_uah">грн</span>
+                        </div>
+
+                        <ul data-plan-list="pro"></ul>
+
+                        <a href="#" class="price-btn" data-lang="add_to_chat">Додати в чат</a>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="pricing-details">
+            <div class="container">
+
+                <div class="details-grid">
+
+                    <section class="services-panel">
+                        <h2 data-lang="single_services_title">Окремі послуги</h2>
+
+                        <div class="services-table">
+                            <div class="services-row services-head">
+                                <span data-lang="table_service">Послуга</span>
+                                <span data-lang="table_platform">Платформа</span>
+                                <span data-lang="table_price">Стартова ціна</span>
+                                <span data-lang="table_time">Запуск</span>
+                            </div>
+
+                            <div class="services-body"></div>
+                        </div>
+                    </section>
+
+                    <section class="maps-card">
+                        <div class="maps-content">
+                            <h2>Google Maps</h2>
+
+                            <p data-lang="maps_text">
+                                Для локального бізнесу, довіри та репутації компанії
+                            </p>
+
+                            <div class="maps-price">
+                                <span data-lang="price_from">від</span>
+                                <strong>800</strong>
+                                <span data-lang="maps_price_unit">грн / 100 відгуків</span>
+                            </div>
+
+                            <ul>
+                                <li data-lang="maps_item_1">Підвищення локальної довіри</li>
+                                <li data-lang="maps_item_2">Плавне збільшення активності</li>
+                                <li data-lang="maps_item_3">Підтримка рейтингу компанії</li>
+                            </ul>
+
+                            <a href="#" class="maps-btn" data-lang="discuss_launch">Обговорити запуск</a>
+                        </div>
+
+                        <div class="maps-visual">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                    </section>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="pricing-cta">
+            <div class="container">
+                <div class="pricing-cta-box">
+
+                    <div class="cta-icon">
+                        <i class="fa-solid fa-comment-dots"></i>
+                    </div>
+
+                    <div>
+                        <h2 data-lang="pricing_cta_title">Не знаєте, який пакет обрати?</h2>
+                        <p data-lang="pricing_cta_text">Підберемо рішення для вашої платформи та цілей.</p>
+                    </div>
+
+                    <a href="#" class="cta-btn">
+                        <i class="fa-brands fa-telegram"></i>
+                        <span data-lang="write_telegram">Написати в Telegram</span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-mark">V</span>
+                        <span class="logo-text">Venqis</span>
+                    </div>
+
+                    <p data-lang="footer_text">
+                        Платформа для безпечного та ефективного росту в соціальних мережах.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3 data-lang="footer_nav">Навігація</h3>
+                    <a href="index.html" data-lang="nav_home">Головна</a>
+                    <a href="#" data-lang="nav_services">Послуги</a>
+                    <a href="tariffs.html" data-lang="nav_prices">Тарифи</a>
+                    <a href="#" data-lang="nav_faq">FAQ</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3 data-lang="footer_platforms">Платформи</h3>
+                    <a href="#">Instagram</a>
+                    <a href="#">TikTok</a>
+                    <a href="#">YouTube</a>
+                    <a href="#">Telegram</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3 data-lang="footer_company">Компанія</h3>
+                    <a href="#" data-lang="footer_about">Про нас</a>
+                    <a href="#" data-lang="footer_terms">Умови використання</a>
+                    <a href="#" data-lang="footer_privacy">Політика конфіденційності</a>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 data-lang="footer_telegram_title">Звʼязок у Telegram</h3>
+                    <p data-lang="footer_telegram_text">Швидка підтримка та консультація</p>
+                    <i class="fa-brands fa-telegram"></i>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="../static/tariffs.js"></script>
+</body>
+
+</html>
