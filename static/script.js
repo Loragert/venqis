@@ -149,7 +149,7 @@ const translations = {
         footer_social_title: "Ми в соціальних мережах",
         footer_copyright: "© 2025 Venqis. Усі права захищені.",
         footer_made: "Створено з",
-        footer_for: "для творців та брендів."
+        footer_for: "для творців та брендів.",
 
 
     }, 
@@ -304,7 +304,7 @@ const translations = {
         footer_social_title: "Find us on social media",
         footer_copyright: "© 2025 Venqis. All rights reserved.",
         footer_made: "Created with",
-        footer_for: "for creators and brands."
+        footer_for: "for creators and brands.",
 
     },
 
