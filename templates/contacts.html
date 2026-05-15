@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Venqis - Контакти</title>
+
+    <link rel="stylesheet" href="../static/contacts.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-row">
+
+                <a href="index.html" class="logo">
+                    <span class="logo-v">V</span>
+                    <span class="logo-rest">enqis</span>
+                </a>
+
+                <nav class="nav">
+                    <a href="index.html" data-lang="nav_home">Головна</a>
+                    <a href="#" data-lang="nav_services">Послуги</a>
+                    <a href="tariffs.html" data-lang="nav_prices">Тарифи</a>
+                    <a href="#" data-lang="nav_faq">FAQ</a>
+                    <a href="contacts.html" class="active" data-lang="nav_contacts">Контакти</a>
+                </nav>
+
+                <div class="header-actions">
+
+                    <div class="lang-switcher">
+                        <button class="lang-btn active" data-lang-code="uk" type="button">UA</button>
+                        <span>|</span>
+                        <button class="lang-btn" data-lang-code="en" type="button">EN</button>
+                    </div>
+
+                    <a href="#" class="btn-header" data-lang="nav_start">Розпочати</a>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="contact-section">
+
+            <div class="container">
+
+                <div class="contact-heading">
+                    <h1 data-lang="contact_title">
+                        Звʼязок з Venqis
+                    </h1>
+
+                    <p data-lang="contact_subtitle">
+                        Ми завжди на звʼязку та готові допомогти вам із запуском, консультацією або вибором рішення для вашої платформи.
+                    </p>
+                </div>
+
+                <div class="contact-cards">
+
+                    <article class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-brands fa-telegram"></i>
+                        </div>
+
+                        <div>
+                            <h2 data-lang="contact_telegram_title">Telegram підтримка</h2>
+                            <p data-lang="contact_telegram_text">Швидкий звʼязок та консультація</p>
+
+                            <span class="status">
+                                <i class="fa-solid fa-circle"></i>
+                                <span data-lang="contact_online">Онлайн</span>
+                            </span>
+                        </div>
+
+                        <a href="#" class="card-btn" data-lang="contact_write">Написати</a>
+                    </article>
+
+                    <article class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+
+                        <div>
+                            <h2>Email</h2>
+                            <p data-lang="contact_email_text">Для бізнес-запитів та співпраці</p>
+
+                            <span class="contact-link">support@venqis.com</span>
+                        </div>
+
+                        <a href="mailto:support@venqis.com" class="card-btn" data-lang="contact_send_email">
+                            Надіслати лист
+                        </a>
+                    </article>
+
+                    <article class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+                        <div>
+                            <h2>Instagram</h2>
+                            <p data-lang="contact_instagram_text">Новини, оновлення та кейси</p>
+                        </div>
+
+                        <a href="#" class="card-btn" data-lang="contact_go">
+                            Перейти
+                        </a>
+                    </article>
+
+                    <article class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+
+                        <div>
+                            <h2 data-lang="contact_time_title">Час відповіді</h2>
+                            <strong>5–15 хв</strong>
+                            <p data-lang="contact_time_text">Середній час відповіді підтримки</p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="contact-panel">
+
+                    <form class="contact-form">
+
+                        <h2 data-lang="form_title">Напишіть нам</h2>
+
+                        <div class="form-grid">
+
+                            <label>
+                                <span data-lang="form_name">Ваше імʼя</span>
+                                <input type="text" data-placeholder="form_name_placeholder" placeholder="Введіть ваше імʼя" />
+                            </label>
+
+                            <label>
+                                <span data-lang="form_contact">Telegram або Email</span>
+                                <input type="text" data-placeholder="form_contact_placeholder" placeholder="username або email@example.com" />
+                            </label>
+
+                        </div>
+
+                        <label>
+                            <span data-lang="form_platform">Платформа</span>
+
+                            <select>
+                                <option data-lang="form_platform_placeholder">Виберіть платформу</option>
+                                <option>Instagram</option>
+                                <option>TikTok</option>
+                                <option>YouTube</option>
+                                <option>Telegram</option>
+                                <option>Google Maps</option>
+                            </select>
+                        </label>
+
+                        <label>
+                            <span data-lang="form_message">Повідомлення</span>
+                            <textarea data-placeholder="form_message_placeholder" placeholder="Опишіть ваше питання або завдання..."></textarea>
+                        </label>
+
+                        <button type="submit" class="form-btn" data-lang="form_submit">
+                            Надіслати повідомлення
+                        </button>
+
+                        <p class="form-note">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span data-lang="form_note">Ми не передаємо ваші дані третім сторонам.</span>
+                        </p>
+
+                    </form>
+
+                    <div class="contact-visual">
+                        <div class="visual-orbit"></div>
+
+                        <div class="visual-card">
+                            <i class="fa-regular fa-message"></i>
+                        </div>
+
+                        <div class="visual-bubble">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="visual-mail">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+
+                        <div class="visual-user">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="social-block">
+                    <h2 data-lang="social_title">Ми в соціальних мережах</h2>
+
+                    <div class="social-links">
+                        <a href="#" aria-label="Telegram">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="#" aria-label="X">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-cta">
+
+                    <div class="cta-icon">
+                        <i class="fa-regular fa-message"></i>
+                    </div>
+
+                    <div>
+                        <h2 data-lang="cta_title">Потрібна допомога з запуском?</h2>
+                        <p data-lang="cta_text">Підберемо оптимальне рішення для вашої платформи та цілей.</p>
+                    </div>
+
+                    <a href="#" class="cta-btn">
+                        <span data-lang="cta_btn">Написати в Telegram</span>
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-v">V</span>
+                        <span class="logo-rest">enqis</span>
+                    </div>
+
+                    <p data-lang="footer_text">
+                        Venqis — платформа для зростання в соціальних мережах. Продуманий, аналітичний та автоматизований підхід до успіху.
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 data-lang="footer_product">Продукт</h3>
+                    <a href="#" data-lang="footer_services">Послуги</a>
+                    <a href="#" data-lang="footer_prices">Тарифи</a>
+                    <a href="#" data-lang="footer_options">Можливості</a>
+                    <a href="#" data-lang="footer_partners">Партнерська програма</a>
+                    <a href="#" data-lang="footer_updates">Оновлення</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3 data-lang="footer_company">Компанія</h3>
+                    <a href="#" data-lang="footer_about">Про нас</a>
+                    <a href="#" data-lang="footer_blog">Блог</a>
+                    <a href="#" data-lang="footer_cases">Кейси</a>
+                    <a href="#" data-lang="footer_reviews">Відгуки</a>
+                    <a href="#" data-lang="footer_contacts">Контакти</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3 data-lang="footer_support">Підтримка</h3>
+                    <a href="#" data-lang="footer_faq">FAQ</a>
+                    <a href="#" data-lang="footer_instructions">Інструкції</a>
+                    <a href="#" data-lang="footer_status">Статус сервісів</a>
+                    <a href="#" data-lang="footer_contact_us">Звʼязатися з нами</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3 data-lang="footer_legal">Правова інформація</h3>
+                    <a href="#" data-lang="footer_terms">Умови використання</a>
+                    <a href="#" data-lang="footer_privacy">Політика конфіденційності</a>
+                    <a href="#" data-lang="footer_refund">Політика повернень</a>
+                    <a href="#" data-lang="footer_offer">Публічна оферта</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p data-lang="footer_copyright">
+                    © 2026 Venqis. Усі права захищені.
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../static/contacts.js"></script>
+</body>
+
+</html>
